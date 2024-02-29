@@ -2,9 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Majors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 20%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .sidebar form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar form input,
+        .sidebar form textarea {
+            width: calc(100% - 40px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .sidebar form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: calc(100% - 40px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="mymajors.html">My Majors</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="weblinks.html">Web Links</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="banner">
+        <img src="banner.jpg" alt="Banner Image">
+    </div>
+</header>
+
+<div class="container">
+    <h1>My Major</h1>
+    <p>Below is the major I am pursuing here at Penn State University:</p>
+    <ul>
+        <li>Cyber-security Analytics and Operations</li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="sidebar">
+        <h2>Contact Form</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvnrpgp" method="post">
+            <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_reply to" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Type your message here." required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>Adedeji Bamidele | <a href="https://www.linkedin.com/in/adedeji-bamidele">Linkedin</a></p>
+        <p>&copy; Copyright 2024</p>
+    </div>
+</footer>
 
 </body>
 </html>

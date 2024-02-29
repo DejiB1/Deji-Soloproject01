@@ -2,9 +2,219 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 20%;
+            height: auto;
+            display: block;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .sidebar form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar form input,
+        .sidebar form textarea {
+            width: calc(100% - 40px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .sidebar form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: calc(100% - 40px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+
 </head>
 <body>
 
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="mymajors.html">My Majors</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="weblinks.html">Web Links</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="banner">
+        <img src="banner.jpg" alt="Banner Image">
+    </div>
+</header>
+
+<main>
+
+    <div class="container">
+        <section class="section">
+            <h1>Adedeji Bamidele</h1>
+            <p>443-983-1869 | Adedeji1022@gmail.com</p>
+            <h2>Education</h2>
+            <ul>
+                <li>The Pennsylvania State University, University Park, PA</li>
+                <li>Bachelor of Science, Cyber-security Analytics and Operations</li>
+                <li>Dean’s List Fall 2023</li>
+                <li>Expected graduation date | May 2026</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Certification</h2>
+            <p>ISC2’s Certified in Cyber-security Certification | July 2023</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>ArcGIS</li>
+                <li>Linux</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Microsoft Suite (Excel, Word & PowerPoint)</li>
+                <li>Good verbal/written communication</li>
+                <li>Team player</li>
+                <li>Problem-solving skills</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Project Work Experience</h2>
+            <p>Networking and Telecommunication Model Live Stream Group Project | January-May 2023</p>
+            <ul>
+                <li>Team member</li>
+                <li>Determined the number of routers, switches, and wireless access points needed to make the live stream run smoothly.</li>
+                <li>Researched cameras, audio, and lighting equipment to ensure good quality of the live stream.</li>
+                <li>Created a budget for all the equipment used for live stream to determine the overall cost.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Work Experience</h2>
+            <p>Penn State, Resident Assistant | January 2023-Present</p>
+            <ul>
+                <li>Serve as a highly visible campus leader and representative of the Office of Residence Life.</li>
+                <li>Uphold high standards and live in accordance with the policies in the Student Code of Conduct.</li>
+                <li>Encourage residents to pursue their educational and personal interests.</li>
+            </ul>
+            <p>Walmart, Sporting Goods and Electronics, Customer Service Team Member | May-Present</p>
+            <ul>
+                <li>Used the Maryland DNR website to verify customers IDs in order to purchase fishing licenses.</li>
+                <li>Advised customers while purchasing computers, TVs, and gaming consoles.</li>
+                <li>Performed extensive ID background checks on customers before selling them a firearm.</li>
+                <li>Checked inventory logs to make sure all electronic merchandise is accounted for.</li>
+            </ul>
+            <p>Redner’s Warehouse Market, Cashier - September 2020 – August 2023</p>
+            <ul>
+                <li>Checked customers IDs when selling tobacco products to ensure minors are not purchasing them.</li>
+                <li>Responsible for accurate money management at the beginning and end of the work shift.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Volunteer Experience</h2>
+            <p>Redeem Christian Church of God, House of Praise Security Team Member | September 2018-February 2020</p>
+        </section>
+
+        <section class="section">
+            <h2>Awards</h2>
+            <p>Army Educational Outreach Program, Certificate of Merit | July 2020</p>
+            <ul>
+                <li>Completed GEMS III Virtual Computer Science Principles and Virtual Computer Science Application.</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Contact Form</h2>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvnrpgp" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_reply to" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Type your message here." required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Adedeji Bamidele | <a href="https://www.linkedin.com/in/adedeji-bamidele">Linkedin</a></p>
+    <p>&copy; Copyright 2024</p>
+</footer>
+
 </body>
 </html>
+
+

@@ -3,11 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adedeji Bamidele's personal website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 20%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .sidebar form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar form input,
+        .sidebar form textarea {
+            width: calc(100% - 40px);
+            padding: 8px;
+            margin-bottom: 10px;
+            background-color: mintcream;
+            box-sizing: border-box;
+        }
+
+        .sidebar form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: calc(100% - 40px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
-<!-- Navbar -->
+
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,21 +108,45 @@
     </ul>
 </nav>
 
-<!-- Top Banner -->
 <div class="banner">
     <img src="banner.jpg" alt="Banner Image">
 </div>
 
-<!-- Main Content -->
 <div class="container">
-    <h1>Welcome to My Personal Website</h1>
-    <p>This is a placeholder text. You can replace it with your own content.</p>
-    <p>Feel free to explore the different pages using the navigation bar above.</p>
+    <h1>Welcome to Deji's Personal Website</h1>
+    <p>On this website you can find all the information about Deji and his life.</p>
+    <p>Feel free to click the links above and look at the other pages that contain information about me as well.</p>
 </div>
 
-<!-- Footer -->
+<div class="content">
+    <div class="sidebar">
+        <h2>Contact Form</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvnrpgp" method="post">
+            <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_reply to" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Type your message here." required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
 <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>Adedeji Bamidele | <a href="https://www.linkedin.com/in/adedeji-bamidele">Linkedin</a></p>
+    <p>&copy; Copyright 2024</p>
 </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
