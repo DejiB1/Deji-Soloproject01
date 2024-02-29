@@ -2,9 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 20%;
+            height: auto;
+            display: block;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .photo {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .photo-info {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .sidebar form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .sidebar form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar form input,
+        .sidebar form textarea {
+            width: calc(100% - 40px);
+            padding: 8px;
+            margin-bottom: 10px;
+            background-color: mintcream;
+            box-sizing: border-box;
+        }
+
+        .sidebar form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: calc(100% - 40px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
 
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="mymajors.html">My Majors</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="weblinks.html">Web Links</a></li>
+    </ul>
+</nav>
+
+<div class="banner">
+    <img src="banner.jpg" alt="Banner Image">
+</div>
+
+<main class="container">
+    <h1 style="text-align: center;">Photo Album: </h1>
+    <div class="photo-grid">
+        <div class="photo-info">
+            <img class="photo" src="photo1.jpg" alt="Photo 1">
+            <p>This is a photo of a sunset from my hometown of Joppa, MD.</p>
+        </div>
+        <div class="photo-info">
+            <img class="photo" src="photo2.jpg" alt="Photo 2">
+            <p>This is my professional headshot used on my LinkedIn page.</p>
+        </div>
+        <div class="photo-info">
+            <img class="photo" src="photo3.jpg" alt="Photo 3">
+            <p>This is a photo of an old Cadillac that I took at The African American History Museum in Washington DC.</p>
+        </div>
+    </div>
+</main>
+
+<div class="sidebar">
+    <h2>Contact Form</h2>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvnrpgp" method="post">
+        <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_reply to" id="email-address" placeholder="email@domain.tld" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Type your message here." required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<footer>
+    <p>Adedeji Bamidele | <a href="https://www.linkedin.com/in/adedeji-bamidele">Linkedin</a></p>
+    <p>&copy; Copyright 2024</p>
+</footer>
+
 </body>
 </html>
+
+

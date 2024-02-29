@@ -3,8 +3,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: mintcream;
-    min-height: 100vh; /* Ensure the body stretches to at least the full height of the viewport */
+    background-color: gray;
+    min-height: 100vh;
 }
 
 nav {
@@ -42,17 +42,17 @@ nav ul li a {
 }
 
 .contact-form {
-    flex: 1; /* Allow the contact form to grow to fill remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left; /* Center the content vertically */
+    justify-content: left;
     margin-top: 20px;
 }
 
 .contact-form form {
     width: 100%;
-    max-width: 400px; /* Limit the width of the form */
+    max-width: 400px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
